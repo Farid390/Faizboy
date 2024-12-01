@@ -1,0 +1,393 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+    myportofolio 
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <style>
+   body {
+     background-image: url('eropa.jpg'); /* Link gambar */
+            background-size: cover; /* Membuat gambar memenuhi layar */
+            background-position: center; /* Memusatkan gambar */
+            background-repeat: no-repeat; /* Tidak mengulang gambar */
+            font-family: Arial, sans-serif;
+            color: black; /* Warna teks */
+        }
+        header {
+            background: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(68, 68, 68, 0.8);
+            padding: 0.5rem 0;
+            animation: slideIn 1s ease-in-out;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff6347;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .about, .projects, .contact, .education, .skills, .experience {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .about h2, .projects h2, .contact h2, .education h2, .skills h2, .experience h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .about p, .contact p, .education p, .skills p, .experience p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .projects .project {
+            display: flex;
+            margin-bottom: 2rem;
+            transition: transform 0.3s;
+        }
+        .projects .project:hover {
+            transform: scale(1.05);
+        }
+        .projects .project img {
+            width: 200px;
+            height: 150px;
+            border-radius: 8px;
+            margin-right: 1rem;
+        }
+        .projects .project .project-info {
+            flex: 1;
+        }
+        .projects .project .project-info h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        .projects .project .project-info p {
+            margin: 0.5rem 0;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .contact form button {
+            padding: 0.7rem;
+            border: none;
+            background: #333;
+            color: #fff;
+            font-size: 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact form button:hover {
+            background: #ff6347;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            animation: fadeIn 2s ease-in-out;
+        }
+        footer p {
+            margin: 0;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1>
+    Muhamad Farid alfais 
+   </h1>
+  </header>
+  <nav>
+   <a href="#about">
+    About
+   </a>
+   <a href="#education">
+    Education
+   </a>
+   <a href="#skills">
+    Skills
+   </a>
+   <a href="#experience">
+    Experience
+   </a>
+   <a href="#projects">
+    Projects
+   </a>
+   <a href="#contact">
+    Contact
+   </a>
+  </nav>
+  <div class="container">
+   <section class="about" id="about">
+    <h2>
+     About Me
+    </h2>
+    <img alt="Profile picture of the developer, smiling and looking professional" class="rounded-full w-32 h-32 mx-auto mb-4" height="128" src="IMG_20241201_020903.jpg" width="128"/>
+    <p>
+     Halo! Saya Muhamad Farid Alfais, seorang Drafter
+Mechanical yang berpengalaman di bidang desain
+teknis. Dengan keahlian dalam AutoCAD dan Autodesk
+Inventor, saya siap membantu Anda menciptakan
+gambar teknis 2D dan model 3D yang akurat dan
+fungsional.
+
+
+
+Saya percaya bahwa setiap detail memiliki peran
+penting dalam keberhasilan sebuah proyek. Dengan
+pendekatan yang komunikatif dan kolaboratif, saya
+berkomitmen untuk memberikan solusi desain terbaik
+sesuai kebutuhan Anda. Mari kita wujudkan ide Anda menjadi hasil yang nyata!
+    </p>
+   </section>
+   <section class="education" id="education">
+    <h2>
+     Education
+    </h2>
+    <p>
+     <strong>
+      high school 
+     </strong>
+     - SMAN KOTA TANGERANG  (2021 - 2024)
+    </p>
+   </section>
+   <section class="skills" id="skills">
+    <h2>
+     Skills
+    </h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+     <div class="flex flex-col items-center">
+      <img alt="AutoCAD logo" class="w-16 h-16" height="64" src="Autocad.svg" width="64"/>
+      <p class="mt-2">
+       AutoCAD
+      </p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img alt="Autodesk Inventor logo" class="w-16 h-16" height="64" src="Autodesk.svg" width="64"/>
+      <p class="mt-2">
+       Autodesk Inventor
+      </p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img alt="Adobe logo" class="w-16 h-16" height="64" src="Adobe Indesign.svg" width="64"/>
+      <p class="mt-2">
+       Adobe
+      </p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img alt="Excel logo" class="w-16 h-16" height="64" src="Microsoft Excel.svg" width="64"/>
+      <p class="mt-2">
+       Excel
+      </p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img alt="Canva logo" class="w-16 h-16" height="64" src="Canva.svg" width="64"/>
+      <p class="mt-2">
+       Canva
+      </p>
+     </div>
+     <div class="flex flex-col items-center">
+      <img alt="Microsoft Office logo" class="w-16 h-16" height="64" src="Microsoft Powerpoint.svg" width="64"/>
+      <p class="mt-2">
+       powerpoint 
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="experience" id="experience">
+    <h2>
+     Experience
+    </h2>
+    <p>
+     <strong>
+      UPTD PELATIHAN KERJA PROV BANTEN
+     </strong>
+     - BLK, UPTD TANGERANG SELATAN
+    </p>
+    <p>
+     Saya baru saja menyelesaikan pelatihan
+sebagai Drafter Mekanikal bersertifikat dengan
+pengalaman menggunakan Inventor dan
+AutoCAD. Saya berkomitmen untuk
+menghasilkan desain yang efisien dan inovatif,
+dengan selalu berfokus pada kebutuhan klien
+dan spesifikasi proyek.
+    </p>
+    <p>
+     <strong>
+      intern
+     </strong>
+     - (Oktober 2024 - November 2024)
+    </p>
+    <p>
+    </p>
+   </section>
+   <section class="projects" id="projects">
+    <h2>
+     Projects
+    </h2>
+    <div class="project">
+     <img alt="Screenshot of Project 1, a responsive web application with a modern design" height="150" src="image 3.jpg" width="200"/>
+     <div class="project-info">
+      <h3>
+       Project 1
+      </h3>
+      <p>
+       A portofolio website project refrigerator.
+      </p>
+     </div>
+    </div>
+    <div class="project">
+     <img alt="Screenshot of Project 2, an e-commerce website with a user-friendly interface" height="150" src="image 2.jpg" width="200"/>
+     <div class="project-info">
+      <h3>
+       Project 2
+      </h3>
+      <p>
+       A portofolio website project screw jack.
+      </p>
+     </div>
+    </div>
+    <div class="project">
+     <img alt="Screenshot of Project 3, a portfolio website showcasing various projects" height="150" src="image 1.jpg" width="200"/>
+     <div class="project-info">
+      <h3>
+       Project 3
+      </h3>
+      <p>
+       A portfolio website project ragum.
+      </p>
+     </div>
+    </div>
+   </section>
+    <section class="projects" id="projects">
+    <h2>
+     sertificat
+    </h2>
+    <div class="project">
+     <img alt="Screenshot of Project 1, a responsive web application with a modern design" height="200" src="sertifikat .jpg" width="300"/>
+     </div>
+    </div>
+     </section>
+       <section class="contact" id="contact">
+    <h2>
+     Contact Me
+    </h2>
+    <form>
+     <input name="name" placeholder="Your Name" required="" type="text"/>
+     <input name="email" placeholder="Your Email" required="" type="email"/>
+     <textarea name="message" placeholder="Your Message" required="" rows="5"></textarea>
+     <button type="submit">
+      Send Message
+     </button>
+    </form>
+   </section>
+  </div>
+  <style>
+        /* Tambahkan gaya CSS untuk tata letak */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0077b5; /* Warna hover, bisa disesuaikan */
+        }
+    </style>
+  <body>
+  
+    <h1>Follow Me on Sosial Media</h1>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/frdalfais/profilecard/?igsh=dHo4NzF1cmVmYWxz" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/muhamad-farid-alfais" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+  </body>
+  <footer>
+   <p>
+    © 2024 faridalfais. All rights reserved.
+   </p>
+   <p>
+    copyright © 2024 Scenic Landscapes Inc.
+   </p>
+  </footer>
+ </body>
+  </html>
